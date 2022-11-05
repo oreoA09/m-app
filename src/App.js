@@ -36,7 +36,7 @@ function App() {
     <div className="App">
       <Searchbar handleSearch = {handleSearch}/>
       {message}
-      <Gallery />
+      <Gallery data={data}/>
     </div>
   );
 }
