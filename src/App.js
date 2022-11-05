@@ -8,10 +8,13 @@ function App() {
   let [message, setMessage] = useState('Search for Songs')
   let [data, setData] = useState([])
 
+  const url = "https://itunes.apple.com/search?term=";
+
   useEffect(()=>{
+    if(search){
     const fetchData = async () =>{
       document.title = `${search} Songs`
-      const response = await fetch('https://itunes.apple.com/search?term=the%20grateful%20dead')
+      const response = await fetch(url + search)
       const resData = await response.json()
       // console.log(resData)
       if(resData.results.length > 0){
@@ -21,6 +24,7 @@ function App() {
       }
     }
     fetchData()
+  }
   }, [search])
 
   const handleSearch = (e, term)=>{
