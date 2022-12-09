@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/m-app/static/css/main.fa6107da.css",
+    "main.js": "/m-app/static/js/main.57925537.js",
+    "static/js/787.614d1a85.chunk.js": "/m-app/static/js/787.614d1a85.chunk.js",
+    "static/media/m-playing.gif": "/m-app/static/media/m-playing.31381f214709af299207.gif",
+    "static/media/mapplogo.png": "/m-app/static/media/mapplogo.6222a8718221eab3297e.png",
+    "index.html": "/m-app/index.html",
+    "main.fa6107da.css.map": "/m-app/static/css/main.fa6107da.css.map",
+    "main.57925537.js.map": "/m-app/static/js/main.57925537.js.map",
+    "787.614d1a85.chunk.js.map": "/m-app/static/js/787.614d1a85.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa6107da.css",
+    "static/js/main.57925537.js"
+  ]
+}
