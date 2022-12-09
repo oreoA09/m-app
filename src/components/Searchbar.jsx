@@ -5,8 +5,8 @@ function SearchBar(props){
 
     return(
         <form onSubmit={(e) => props.handleSearch(e, searchItem)}>
-            <input type="text" placeholder= "Search songs" onChange={(e)=> setSearchItem(e.target.value)}/>
-            <input type="submit"/>
+            <input type="text" className="App-input" placeholder= "Search songs" onChange={(e)=> setSearchItem(e.target.value)}/>
+            <input type="submit" className="App-button"/>
         </form>
     )
 }

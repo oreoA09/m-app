@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import Gallery from './components/Gallery';
 import Searchbar from './components/Searchbar';
+import logoimage from './mapplogo.png'
 import './App.css';
 
 function App() {
   let [search, setSearch] = useState("")
-  let [message, setMessage] = useState('Search for Songs')
+  let [message, setMessage] = useState('Find your favourite artist\'s Songs')
   let [data, setData] = useState([])
 
   const url = "https://itunes.apple.com/search?term=";
@@ -34,8 +35,10 @@ function App() {
 
   return (
     <div className="App">
-      <Searchbar handleSearch = {handleSearch}/>
+      <img src={logoimage} className="App-logo"/>
+      <h2>TurnTable</h2>
       {message}
+      <Searchbar handleSearch = {handleSearch}/>
       <Gallery data={data}/>
     </div>
   );

@@ -1,32 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400&display=swap');
+
 .App {
   text-align: center;
+  color: bisque;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 25vmin;
   pointer-events: none;
+  margin: 50px 0px 0px 0px;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +26,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App h2{
+  margin: 0px;
+}
+
+.App-input{
+  margin: 40px 10px 40px 0px;
+  padding: 6px 20px;
+  width: 20%;
+  border-radius: 25px 0px 0px 25px;
+  font-weight: 600;
+  font-family: 'Kanit', sans-serif;
+  background-color: bisque;
+  font-size: 16px;
+}
+
+.App-button{
+  margin: 40px 10px 40px 0px;
+  padding: 6px 20px;
+  border-radius: 0px 25px 25px 0px;
+  background-color: #B92E3A;
+  font-weight: 600;
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px;
+}
+
+/* main div */
+.display{
+  margin: auto;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 150px;
+}
+
+.display button{
+  border-radius: 25px;
+  background-color: #B92E3A;
+  font-weight: 600;
+  font-family: 'Kanit', sans-serif;
+  padding: 4px 10px;
+}
+
+.display button span{
+  color: bisque;
+}
+
+.detailV{
+  padding: 0px;
+  line-height: 18px;
+  margin-top: 0px;
+}
+.detailV img{
+  width: 120px;
+}
+
+.detailV h4{
+  margin: 0px auto;
+  padding: 0px;
 }
